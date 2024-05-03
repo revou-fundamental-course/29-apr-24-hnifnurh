@@ -1,0 +1,52 @@
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.navigation-container > nav > button {
+    height: 64px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+.content-container>header {
+    text-align: center;
+}
+
+.core-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.core-content > div {
+    height: 300px;
+    width: 500px;
+    border: 1px solid;
+}
+
+#core-right {
+    padding: 24px;
+}
+
+/* .core-item > header {
+    text-align: center;
+} */
+
+.item-form {
+    /* text-align: center; */
+    display: grid;
+    margin-bottom: 8px;
+}
+
+.item-form > input {
+    height: 32px;
+    width: 50%; 
+    margin-bottom: 12px;   
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+}
