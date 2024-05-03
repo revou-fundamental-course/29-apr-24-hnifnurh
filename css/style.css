@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
 .navigation-container {
     display: flex;
     justify-content: space-between;
@@ -5,6 +11,13 @@
     padding-right: 32px;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.navigation-icon {
+    background-image: url(../assets/cover.png);
+    height: 64px;
+    width: 64px;
+    background-size: cover;
 }
 
 .navigation-container > nav > button {
@@ -16,21 +29,25 @@
 
 .content-container>header {
     text-align: center;
+    margin-bottom: 64px;
 }
 
 .core-content {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 24px;
 }
 
 .core-content > div {
-    height: 300px;
+    height: auto;
     width: 500px;
     border: 1px solid;
+    border-radius: 5px;
 }
 
 #core-right {
-    padding: 24px;
+    width: 20%;
+    padding: 48px;
 }
 
 /* .core-item > header {
@@ -44,9 +61,102 @@
 }
 
 .item-form > input {
-    height: 32px;
-    width: 50%; 
-    margin-bottom: 12px;   
+    height: 48px;
+    width: auto; 
+    margin-bottom: 24px;   
     border: 1px solid darkgrey;
     border-radius: 10px;
+    padding-left: 12px;
+}
+
+.our-package-separator {
+    background-color: aliceblue;
+    height: 200px;
+    text-align: center;
+    align-content: center;   
+}
+
+.our-package-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-inline: 64px;
+}
+
+.our-package-item{
+    display: flex;
+    height: 10%;
+    width: 30%;
+}
+
+.our-package-icon  {
+    height: 48px;
+    width: 48px;
+    border: 1px solid darkgray;
+    border-radius: 500%;
+}
+
+.our-package-content {
+    margin-left: 24px;
+}
+
+.our-package-content > h1 {
+    font-size: 2vw;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.our-package-content > p {
+    font-size: 1.2vw;
+    margin-top: 0px;
+
+}
+
+.closing-argument-container {
+    display: block;
+    text-align: center;
+    margin-inline: 48px;
+}
+
+.closing-argument-container > h1 {
+    font-size: 3vw;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+.closing-argument-container > h3 {
+    font-size: 1.2vw;
+}
+
+
+.closing-argument-container > button {
+    height: 48px;
+    width: 25%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-icon {
+    height: 48px;
+    width: 48px;
+    margin-top: 24px;
+    border-radius: 500%;
+}
+
+.footer-item {
+    display: flex;  
+    justify-content: center;
+    gap: 10px;
+    margin-block: 0px;
+}
+
+.footer-container > p {
+    margin-top: 0px;
 }
