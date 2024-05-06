@@ -26,17 +26,60 @@
         </header>
 
         <section class="core-content">
-            <div class="core-item"></div> <!-- Ini JS-nya -->
+            <div class="core-item">
+                <section class="photo-section">
+                    
+                    <picture>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                              <img src="assets/Photos/_MG_0297.JPG" style="width:100%">
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="assets/Photos/_MG_0680.JPG" style="width:100%">
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="assets/Photos/_MG_0956.JPG" style="width:100%">
+                            </div>
+                          
+                            <div style="text-align:center">
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                            </div>
+                        </div>
+                        <script src="js/script.js"></script>
+                    </picture>
+
+                    <blockquote>"Liburanku jadi menyenagkan bersama Travel Agentku."</blockquote>
+                    <div class="profile-section" style="display: flex;">
+                        <img class="" src="assets/Flags/japan.png" alt="">
+                        <div class="">
+                            <h1>Bali</h1>
+                            <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="description-section">
+                    <h1>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</h1>
+                    <div class="pointer-section" style="display: flex;">
+                        <img class="" src="" alt="">
+                        <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                    </div>
+                </section>
+            </div> <!-- Ini JS-nya -->
             <div class="core-item" id="core-right">
                 <header>
                     <h1 style="font-size: 3vw; margin-top: 12px; margin-bottom: 0px;">Contact Us</h1>
                     <h3 style="font-size: 1.2vw; margin-top: 0px; margin-bottom: 32px;">Sales akan menghubungi anda 1x24 jam setelah data kami terima</h3>
                 </header>
 
-                <section class="item-form">
-                    <label for="">Your Name :</label><input type="text" placeholder="First and last name">
-                    <label for="">Email Address :</label><input type="email" placeholder="example@email.com">
-                    <label for="">What are you interested in?</label><input type="search" list="mylist" placeholder="Select an option">
+                <form class="item-form">
+                    <label required for="">Your Name :</label><input type="text" placeholder="First and last name">
+                    <label required for="">Email Address :</label><input type="email" placeholder="example@email.com">
+                    <label required for="">What are you interested in?</label><input type="search" list="mylist" placeholder="Select an option">
                     <datalist id="mylist">
                         <option value="Software Engineer">
                         <option value="Product Manage">
@@ -44,7 +87,7 @@
                         <option value="Digital Marketing">
                      </datalist>
                     <input type="submit" value="Send" style="margin-top: 24px;">
-                </section>
+                </form>
             
             </div>
         </section>
