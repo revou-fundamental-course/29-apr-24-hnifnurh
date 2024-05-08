@@ -4,16 +4,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.photo-section > blockquote {
-    font-style: italic;
-    color: darkgray;
-}
-
 /* Batess Editt Jangan Overr */
+
 .mySlides {display: none;}
 .slideshow-container {
     max-width: 1000px;
-    position: relative
+    position: relative;
     margin: auto;
 }
 
@@ -47,9 +43,77 @@ body {
   
 /* Batess Editt Jangan Overr */
 
+.photo-section > blockquote {
+    font-style: italic;
+    font-size: 24px;
+    color: darkgray;
+    width: 600px;
+    margin-inline: 24px;
+}
+
+.profile-section {
+    width: 800px;
+    margin-left: 20px;
+}
+
+.profile-section > img {
+    height: 52px;
+    width: 52px;
+    border: 1px darkgray;
+    border-radius: 500%;
+    margin-top: 10px;
+}
+
+.profile-identity {
+    margin-top: 10px;
+    margin-left: 28px;
+    width: 600px;
+
+}
+
+.profile-identity > h1 {
+    margin-block: 0px;
+    font-size: 24px;
+    color: #515151;
+}
+
+.profile-identity > p {
+    margin-top: 0px;
+    font-size: 18px;
+    color: darkgray;
+}
+
+.description-section {
+    width: 700px;
+}
+
 .description-section > h1 {
-    font-size: 1vw;
-    color: #171717;
+    font-size: 1.5vw;
+    color: #515151;
+}
+
+ul {
+    counter-reset: section;
+    list-style: none;
+}
+  
+li {
+    margin: 0 0 10px 0;
+    line-height: 60px;
+    font-size: 24px;
+}
+  
+li:before {
+    content: counter(section);
+    counter-increment: section;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 0 0;
+    background-color: #EDF0F4;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: 700;
 }
 
 .navigation-container {
@@ -75,32 +139,40 @@ body {
     border-radius: 10px;
 }
 
-.content-container>header {
+.content-container > header {
     text-align: center;
     margin-bottom: 64px;
 }
 
 .core-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     margin-bottom: 24px;
+    margin-inline: 100px;
 }
 
 .core-content > div {
     height: auto;
     width: 500px;
-    border: 1px solid;
-    border-radius: 5px;
+}
+
+.core-item {
+    
+}
+
+#core-left {
+    width: 800px;
+    
 }
 
 #core-right {
-    width: 20%;
-    padding: 48px;
+    width: 400px;
+    height: 500px;
+    padding: 12px 48px 12px 48px;
+    border-radius: 10px;
+    background-color: #EDF0F4;
 }
-
-/* .core-item > header {
-    text-align: center;
-} */
 
 .item-form {
     /* text-align: center; */
@@ -111,10 +183,12 @@ body {
 .item-form > input {
     height: 48px;
     width: auto; 
-    margin-bottom: 24px;   
+    margin-top: 0px;
+    margin-bottom: 12px;   
     border: 1px solid darkgrey;
     border-radius: 10px;
     padding-left: 12px;
+    padding-right: 12px;
 }
 
 .our-package-separator {
