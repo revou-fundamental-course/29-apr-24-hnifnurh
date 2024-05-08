@@ -4,6 +4,29 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navigation-icon {
+    background-image: url(../assets/cover.png);
+    height: 48px;
+    width: 48px;
+    background-size: cover;
+}
+
+.navigation-container > nav > button {
+    height: 48px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
 /* Batess Editt Jangan Overr */
 
 .mySlides {display: none;}
@@ -13,7 +36,10 @@ body {
     margin: auto;
 }
 
-.slideshow-container > img {vertical-align: middle;}
+.slideshow-container > img {
+    vertical-align: middle;
+
+}
 
 .dot {
     height: 5px;
@@ -84,60 +110,44 @@ body {
 }
 
 .description-section {
-    width: 700px;
+    width: 750px;
+    
 }
 
 .description-section > h1 {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     color: #515151;
+    margin-bottom: 2em;
 }
 
 ul {
     counter-reset: section;
     list-style: none;
+    padding-left: 0px;
 }
   
 li {
-    margin: 0 0 10px 0;
-    line-height: 60px;
+    margin: 0 0 48px 0;
+    line-height: 28px;
     font-size: 24px;
+    display: flex;  
+    font-weight: 500;
+    color: #717171;
 }
   
 li:before {
     content: counter(section);
     counter-increment: section;
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin: 0 20px 0 0;
+    width: 8.5%;
+    height: 10%;
+    margin-right: 20px;
     background-color: #EDF0F4;
-    border-radius: 100%;
+    border-radius: 50%; 
     text-align: center;
     font-weight: 700;
-}
-
-.navigation-container {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.navigation-icon {
-    background-image: url(../assets/cover.png);
-    height: 64px;
-    width: 64px;
-    background-size: cover;
-}
-
-.navigation-container > nav > button {
-    height: 64px;
-    width: 100px;
-    border: none;
-    border-radius: 10px;
-}
+    line-height: 60px; 
+}   
 
 .content-container > header {
     text-align: center;
@@ -185,15 +195,34 @@ li:before {
     width: auto; 
     margin-top: 0px;
     margin-bottom: 12px;   
-    border: 1px solid darkgrey;
+    border: 2px solid #C9D3DD;
     border-radius: 10px;
     padding-left: 12px;
     padding-right: 12px;
 }
 
+.item-form > button {
+    height: 48px;
+    width: auto; 
+    margin-top: 12px;
+    margin-bottom: 12px;   
+    border: 2px solid #C9D3DD;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+#Send {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #EDF0F4;
+    background-color: #29323D;
+}
+
 .our-package-separator {
-    background-color: aliceblue;
-    height: 200px;
+    background-color: #EDF0F4;
+    height: 250px;
     text-align: center;
     align-content: center;   
 }
@@ -210,13 +239,14 @@ li:before {
     display: flex;
     height: 10%;
     width: 30%;
+    margin-block: 3em;
 }
 
 .our-package-icon  {
     height: 48px;
     width: 48px;
-    border: 1px solid darkgray;
     border-radius: 500%;
+    background-color: #EDF0F4;
 }
 
 .our-package-content {
@@ -239,26 +269,33 @@ li:before {
     display: block;
     text-align: center;
     margin-inline: 48px;
+    margin-block: 3em;
 }
 
 .closing-argument-container > h1 {
     font-size: 3vw;
     margin-top: 32px;
-    margin-bottom: 0px;
+    margin-bottom: 32px;
 }
 
-.closing-argument-container > h3 {
+.closing-argument-container > p {
     font-size: 1.2vw;
+    margin-inline: 200px;
+    margin-block: 32px;
 }
 
 
 .closing-argument-container > button {
-    height: 48px;
+    height: 62px;
     width: 25%;
     margin-top: 24px;
     margin-bottom: 24px;
-    border: 1px solid darkgrey;
-    border-radius: 10px;
+    border: solid;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #EDF0F4;
+    background-color: #29323D;
 }
 
 .footer-container {
