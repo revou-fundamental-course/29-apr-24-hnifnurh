@@ -9,20 +9,26 @@
 </head>
 <body>
     <header class="navigation-container">
-        <div class="navigation-icon"></div>
+        <div href="#home" class="navigation-icon"></div>
 
-        <nav>
-            <button>Home</button>
-            <button>Our Package</button>
-            <button>Call Us</button>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="navigation-links">
+            <button><a href="#home">Home</a></button>
+            <button><a href="#ourPackage">Our Package</a></button>
+            <button><a href="#callUs">Call Us</a></button>
         </nav>
     </header>
-    <hr>
+    
 
-    <article class="content-container">
+    <article class="content-container" id="home">
         <header>
             <h1 style="font-size: 4vw; margin-top: 24px; margin-bottom: 0px;">Your Trusted Travel Agent</h1>
-            <p style="font-size: 2vw; margin-top: 1em; margin-bottom: 4em;">Your happines is our happines</p>
+            <p style="font-size: 2vw; margin-top: 0px; margin-bottom: 1em;">Your happines is our happines</p>
         </header>
 
         <section class="core-content">
@@ -52,7 +58,7 @@
                         <script src="js/script.js"></script>
                     </picture>
 
-                    <blockquote>"Liburanku jadi menyenagkan bersama Travel Agentku."</blockquote>
+                    <blockquote>"Liburanku jadi menyenangkan bersama Travel Agentku."</blockquote>
 
                     <div class="profile-section" style="display: flex;">
                         <img class="" src="assets/pp orang.jpg" alt="">
@@ -74,9 +80,9 @@
             </div> <!-- Ini JS-nya -->
 
             <div class="core-item" id="core-right">
-                <header>
-                    <h1 style="font-size: 2vw; margin-top: 12px; margin-bottom: 12px;">Contact Us</h1>
-                    <p style="font-size: 1vw; margin-top: 0px; margin-bottom: 32px;">Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                <header class="title-form">
+                    <h1>Contact Us</h1>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
                 </header>
 
                 <form class="item-form">
@@ -99,8 +105,8 @@
             </div>
         </section>
 
-        <section class="our-package-separator">
-            <h1 style="font-size: 48px; color:#515151;">Our Package</h1>
+        <section class="our-package-separator" id="ourPackage">
+            <h1>Our Package</h1>
         </section>
 
         <section class="our-package-container">
@@ -156,7 +162,7 @@
         </section>
         <hr>
 
-        <section class="closing-argument-container">
+        <section class="closing-argument-container" id="callUs">
             <h1>Your Closing Argument Headline</h1>
             <p>I do not have enough information about that person to help with your request. I am a large language model, and I am able to communicate and generate human-like text in response to a wide range of prompts and questions, but my knowledge about this person is limited. Is there anything else I can do to help you with this request?</p>
             <button onclick=" ">CALL TO ACTION</button>
@@ -172,7 +178,7 @@
             </div>
             <p>@ 2024 moqups</p>
         </section>
-    </footer>
+    </footer> 
     
 </body>
 </html>
