@@ -28,6 +28,24 @@ body {
     background-size: cover;
 }
 
+.hamburger-menu {
+    display: none; 
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #29323D;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 5px;
+}
+
 .navigation-container > nav > button > a {
     text-decoration: none;
     color: #29323D;
@@ -210,8 +228,7 @@ li:before {
 }
 
 #core-left {
-    width: 800px;
-    
+    width: 800px;    
 }
 
 #core-right {
@@ -365,25 +382,8 @@ li:before {
     margin-top: 0px;
 }
 
-.hamburger-menu {
-    display: none; 
-    cursor: pointer;
-}
 
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: #29323D;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.navigation-links {
-    display: flex;
-}
-
-
-@media (max-width: 800px) {
+@media (max-width: 375px) {
     .navigation-links {
         display: none; 
     }
@@ -394,8 +394,8 @@ li:before {
 
     .navigation-container {
         justify-content: space-between;
-        padding-left: 16px; 
-        padding-right: 16px; 
+        padding-left: 0px; 
+        padding-right: 0px; 
     }
 
     .hamburger-menu.active ~ .navigation-links {
@@ -404,13 +404,13 @@ li:before {
         align-items: center;
         background-color: white;
         position: fixed;
-        top: 55px; 
+        top: 0px; 
         left: 0;
         right: 0;
-        padding-top: 20px; 
-        padding-bottom: 20px;
+        padding-top: 0px; 
+        padding-bottom: 0px;
         z-index: 999;
-        gap: 10px;
+        gap: 0px;
     }
 
     .hamburger-menu.active .bar:nth-child(1) {
@@ -427,24 +427,29 @@ li:before {
 
     .navigation-container {
         justify-content: space-around;
-        gap: 500px; 
+        gap: 0px; 
+        width: 375px;
+    }
+
+    .core-item {
+        display: block;
     }
 
     .slideshow-container {
-        max-width: 700px;
+        max-width: 300px;
         position: relative;
         margin: auto;
     }
 
     .photo-section > blockquote {
-        margin-left: 60px;
+        margin: 0 auto;
         font-size: 20px;
-        width: 500px;
+        width: 250px;
     }
 
     .profile-section {
-        width: auto;
-        margin: 0 50px; 
+        width: 250px;
+        margin: 0 auto; 
     }
 
     .profile-section > img{
@@ -454,24 +459,24 @@ li:before {
     } 
 
     .profile-identity {
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .profile-identity > h1 {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .profile-identity > p {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .description-section {
-        width: auto;
+        width: 200px;
         margin: 0 20px;
     }
 
     .description-section > h1 {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     li {
@@ -487,14 +492,14 @@ li:before {
         content: counter(section);
         counter-increment: section;
         display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 2%;
         margin-right: 20px;
         background-color: #EDF0F4;
         border-radius: 50%; 
         text-align: center;
         font-weight: 700;
-        line-height: 40px; 
+        line-height: 20px; 
     }   
 
     .core-content {
@@ -506,8 +511,14 @@ li:before {
         width: 100%;
     }
 
+    #core-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #core-right {
-        width: 400px;
+        width: 200px;
     }
 
 
@@ -520,13 +531,13 @@ li:before {
     }
 
     .our-package-separator {
-        font-size: 32px;
+        font-size: 14px;
     }
 
     .our-package-container {
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 20px; 
+        margin: 0 0px; 
     }
 
     .our-package-item {
