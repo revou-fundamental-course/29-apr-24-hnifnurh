@@ -405,10 +405,11 @@ li:before {
     }
 
     .navigation-container {
-        justify-content: space-between;
-        gap: 350px;
+        justify-content: space-around;
+        gap: 300px;
         padding-left: 0px; 
         padding-right: 0px; 
+        margin: 0px;
     }
 
     .hamburger-menu.active ~ .navigation-links {
@@ -434,7 +435,11 @@ li:before {
     }
     .hamburger-menu.active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-8px, -8px);
-    }   
+    }
+
+    .content-container {
+        width: 600px;
+    }
 
     .core-content {
         flex-direction: column;
