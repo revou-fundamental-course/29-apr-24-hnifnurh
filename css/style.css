@@ -384,6 +384,18 @@ li:before {
 
 
 @media (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+    .navigation-container {
+        gap: 0px; /* Reduce the gap between elements */
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
+
     .navigation-links {
         display: none; 
     }
@@ -394,6 +406,7 @@ li:before {
 
     .navigation-container {
         justify-content: space-between;
+        gap: 350px;
         padding-left: 0px; 
         padding-right: 0px; 
     }
@@ -404,13 +417,13 @@ li:before {
         align-items: center;
         background-color: white;
         position: fixed;
-        top: 0px; 
+        top: 60px; 
         left: 0;
         right: 0;
-        padding-top: 0px; 
-        padding-bottom: 0px;
+        padding-top: 20px; 
+        padding-bottom: 20px;
         z-index: 999;
-        gap: 0px;
+        gap: 10px;
     }
 
     .hamburger-menu.active .bar:nth-child(1) {
@@ -421,85 +434,6 @@ li:before {
     }
     .hamburger-menu.active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-8px, -8px);
-    }
-
-    /* BATASSSS EDITT */
-
-    .navigation-container {
-        justify-content: space-around;
-        gap: 0px; 
-        width: 375px;
-    }
-
-    .core-item {
-        display: block;
-    }
-
-    .slideshow-container {
-        max-width: 300px;
-        position: relative;
-        margin: auto;
-    }
-
-    .photo-section > blockquote {
-        margin: 0 auto;
-        font-size: 20px;
-        width: 250px;
-    }
-
-    .profile-section {
-        width: 250px;
-        margin: 0 auto; 
-    }
-
-    .profile-section > img{
-        width: 40px;
-        height: 40px;
-         
-    } 
-
-    .profile-identity {
-        margin-left: 0px;
-    }
-
-    .profile-identity > h1 {
-        font-size: 12px;
-    }
-
-    .profile-identity > p {
-        font-size: 10px;
-    }
-
-    .description-section {
-        width: 200px;
-        margin: 0 20px;
-    }
-
-    .description-section > h1 {
-        font-size: 12px;
-    }
-
-    li {
-        margin: 0 0 48px 0;
-        line-height: 40px;
-        font-size: 18px;
-        display: flex;  
-        font-weight: 500;
-        color: #717171;
-    }
-
-    li:before {
-        content: counter(section);
-        counter-increment: section;
-        display: inline-block;
-        width: 20px;
-        height: 2%;
-        margin-right: 20px;
-        background-color: #EDF0F4;
-        border-radius: 50%; 
-        text-align: center;
-        font-weight: 700;
-        line-height: 20px; 
     }   
 
     .core-content {
@@ -507,66 +441,112 @@ li:before {
         align-items: center;
     }
 
-    .core-content > div {
-        width: 100%;
+    .core-item {
+        width: 100%; /* Make core items full width */
+        margin-bottom: 40px; /* Add space between core items */
     }
 
-    #core-left {
+    .slideshow-container {
+        max-width: 100%; /* Make slideshow container full width */
+        margin: auto;
+    }
+
+    .photo-section > blockquote {
+        width: 100%; /* Make blockquote full width */
+        margin-inline: 0; /* Remove horizontal margin */
+        text-align: center; /* Center text */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .profile-section {
+        width: 100%; /* Make profile section full width */
+        margin: 0; /* Reset margin */
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #core-right {
-        width: 200px;
+    .profile-section > img {
+        margin-top: 10px;
     }
 
+    .profile-identity {
+        margin-top: 10px;
+        text-align: center; /* Center text */
+    }
 
-    .title-form > h1 {
-        font-size: 4vw;
+    .profile-identity > h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .profile-identity > p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .description-section {
+        width: 100%; /* Make description section full width */
+        margin: 0; /* Reset margin */
+    }
+
+    .description-section > h1 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    li {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    li:before {
+        width: 15px; /* Adjust counter width for smaller screens */
+        height: 15px; /* Adjust counter height for smaller screens */
+        line-height: 15px; /* Adjust line height for smaller screens */
+    }
+
+    .title-form h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-top: 20px; /* Add space between title and form */
     }
 
     .title-form p {
-        font-size: 2vw;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Add space between paragraph and form */
     }
 
-    .our-package-separator {
-        font-size: 14px;
+    .item-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Add space between form elements */
     }
 
-    .our-package-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 0px; 
+    .item-form > input,
+    .item-form > button {
+        width: 100%; /* Make form inputs full width */
     }
 
-    .our-package-item {
-        width: 90%;
-    }
-
-    .our-package-content > h1{
-        font-size: 20px;
-    }
-
-    .our-package-content > p{
-        font-size: 16px;
+    #core-left,
+    #core-right {
+        width: 100%; /* Make core items full width */
+        margin: 0; /* Reset margin */
     }
 
     .closing-argument-container > h1 {
-        font-size: 4vw;
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-top: 20px; /* Add space between title and paragraph */
+        margin-bottom: 20px; /* Add space between paragraph and button */
     }
 
     .closing-argument-container > p {
-        font-size: 2vw;
-        margin-inline: 20px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-inline: 0; /* Remove horizontal margin */
+    }
+
+    .closing-argument-container > button {
+        width: 100%; /* Make button full width */
+        margin-top: 20px; /* Add space between paragraph and button */
+        margin-bottom: 20px; /* Add space below button */
     }
 
     .footer-item {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-icon {
-        margin-top: 12px;
+        margin-top: 20px; /* Add space above footer items */
     }
 }
