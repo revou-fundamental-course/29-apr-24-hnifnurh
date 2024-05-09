@@ -12,7 +12,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 900px;
+    gap: 800px;
     align-items: center;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -23,10 +23,8 @@
 }
 
 .navigation-icon {
-    background-image: url(../assets/cover.png);
-    height: 48px;
-    width: 48px;
-    background-size: cover;
+    width: 100px;
+    padding-block: 20px;
 }
 
 .hamburger-menu {
@@ -384,10 +382,8 @@ li:before {
 }
 
 .footer-icon {
-    height: 48px;
-    width: 48px;
+    width: 100px;
     margin-top: 24px;
-    border-radius: 500%;
 }
 
 .footer-item {
@@ -652,9 +648,8 @@ li:before {
     }
     
     .footer-icon {
-        height: 48px;
-        width: 48px;
-        margin-top: 24px;
+        width: 100px;
+        margin-block: 24px;
     }
     
     .footer-container > p {
