@@ -127,11 +127,12 @@ body {
 .profile-section {
     width: 800px;
     margin-left: 20px;
+    display: flex;
 }
 
 .profile-section > img {
-    height: 52px;
-    width: 52px;
+    height: 70px;
+    width: 70px;
     border: 1px darkgray;
     border-radius: 500%;
     margin-top: 10px;
@@ -233,7 +234,7 @@ li:before {
 
 #core-right {
     width: 400px;
-    height: 500px;
+    height: max-content;
     padding: 12px 48px 12px 48px;
     border-radius: 10px;
     background-color: #EDF0F4;
@@ -389,7 +390,7 @@ li:before {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     body {
-        width: 100%;
+        width: 480px;
     }
     .navigation-container {
         gap: 0px; /* Reduce the gap between elements */
@@ -451,25 +452,25 @@ li:before {
     }
 
     .core-item {
-        width: 100%; /* Make core items full width */
-        margin-bottom: 40px; /* Add space between core items */
+        width: 100%; 
+        margin-bottom: 40px; 
     }
 
     .slideshow-container {
-        max-width: 100%; /* Make slideshow container full width */
+        max-width: 100%; 
         margin: auto;
     }
 
     .photo-section > blockquote {
-        width: 100%; /* Make blockquote full width */
-        margin-inline: 0; /* Remove horizontal margin */
-        text-align: center; /* Center text */
-        font-size: 16px; /* Adjust font size for smaller screens */
+        width: 100%; 
+        margin-inline: 0;
+        text-align: center; 
+        font-size: 16px; 
     }
 
     .profile-section {
-        width: 100%; /* Make profile section full width */
-        margin: 0; /* Reset margin */
+        width: 100%; 
+        margin: 0; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -477,85 +478,156 @@ li:before {
 
     .profile-section > img {
         margin-top: 10px;
+        margin-left: 20px;
     }
 
     .profile-identity {
         margin-top: 10px;
-        text-align: center; /* Center text */
+        text-align: center; 
     }
 
     .profile-identity > h1 {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px; 
     }
 
     .profile-identity > p {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px; 
     }
 
     .description-section {
-        width: 100%; /* Make description section full width */
-        margin: 0; /* Reset margin */
+        width: 100%; 
+        margin: 0; 
     }
 
     .description-section > h1 {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 
     li {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 
     li:before {
-        width: 15px; /* Adjust counter width for smaller screens */
-        height: 15px; /* Adjust counter height for smaller screens */
-        line-height: 15px; /* Adjust line height for smaller screens */
+        width: 60px; 
+        height: 60px; 
+        line-height: 60px; 
     }
 
     .title-form h1 {
-        font-size: 20px; /* Adjust font size for smaller screens */
-        margin-top: 20px; /* Add space between title and form */
+        font-size: 20px; 
+        margin-top: 20px; 
     }
 
     .title-form p {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        margin-bottom: 20px; /* Add space between paragraph and form */
+        font-size: 14px; 
+        margin-bottom: 20px; 
     }
 
     .item-form {
         display: flex;
         flex-direction: column;
-        gap: 10px; /* Add space between form elements */
+        gap: 10px;
+        margin-block: ;
+
     }
 
-    .item-form > input,
-    .item-form > button {
-        width: 100%; /* Make form inputs full width */
+    #core-left{
+        width: 100%;
+        min-width: 550px;
+        margin: 0;
     }
-
-    #core-left,
     #core-right {
-        width: 100%; /* Make core items full width */
-        margin: 0; /* Reset margin */
+        width: 100%; 
+        min-width: 300px;
+        height: max-content;
+        margin: 0 0 40px 0;
+    }
+
+    .our-package-separator {
+        height: 150px;
+    }
+
+    .our-package-separator h1 {
+        font-size: 32px;
+    }
+
+    .our-package-container {
+        flex-direction: column;
+        align-items: center;
+        margin-block: 10px;
+    }
+
+    .our-package-item {
+        width: 90%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .our-package-content h1 {
+        font-size: 20px;
+    }
+
+    .our-package-content p {
+        font-size: 16px;
+    }
+
+    .our-package-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
     }
 
     .closing-argument-container > h1 {
-        font-size: 20px; /* Adjust font size for smaller screens */
-        margin-top: 20px; /* Add space between title and paragraph */
-        margin-bottom: 20px; /* Add space between paragraph and button */
+        font-size: 20px;
+        margin-top: 20px; 
+        margin-bottom: 20px; 
     }
 
     .closing-argument-container > p {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        margin-inline: 0; /* Remove horizontal margin */
+        font-size: 14px; 
+        margin-inline: 0; 
     }
 
     .closing-argument-container > button {
-        width: 100%; /* Make button full width */
-        margin-top: 20px; /* Add space between paragraph and button */
-        margin-bottom: 20px; /* Add space below button */
+        width: 100%; 
+        margin-top: 20px; 
+        margin-bottom: 20px;
     }
 
-    .footer-item {
-        margin-top: 20px; /* Add space above footer items */
+    footer {
+        text-align: center;
+        width: 600px;
     }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-item p {
+        margin: 0;
+    }
+    
+    .footer-icon {
+        height: 48px;
+        width: 48px;
+        margin-top: 24px;
+    }
+    
+    .footer-container > p {
+        margin-top: 0px;
+    }    
 }
